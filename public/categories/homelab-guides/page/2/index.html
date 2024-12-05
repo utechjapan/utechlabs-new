@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Homelab Guides | UTechLabs</title>
+<meta name="keywords" content="">
+<meta name="description" content="UTechLabs - Exploring Technology and Innovations">
+<meta name="author" content="">
+<link rel="canonical" href="https://utechjapan.net/categories/homelab-guides/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d80406da97dd874516a1f62b75a5cd9808f16ad5c91df5ae2a35d2b0098e51b9.css" integrity="sha256-2AQG2pfdh0UWofYrdaXNmAjxatXJHfWuKjXSsAmOUbk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://utechjapan.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://utechjapan.net/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://utechjapan.net/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://utechjapan.net/apple-touch-icon.png">
+<link rel="mask-icon" href="https://utechjapan.net/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://utechjapan.net/categories/homelab-guides/index.xml">
+<link rel="alternate" hreflang="en" href="https://utechjapan.net/categories/homelab-guides/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://utechjapan.net/categories/homelab-guides/">
+  <meta property="og:site_name" content="UTechLabs">
+  <meta property="og:title" content="Homelab Guides">
+  <meta property="og:description" content="UTechLabs - Exploring Technology and Innovations">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Homelab Guides">
+<meta name="twitter:description" content="UTechLabs - Exploring Technology and Innovations">
+
+</head>
+
+<body class="list dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://utechjapan.net/" accesskey="h" title="UTechLabs (Alt + H)">UTechLabs</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://utechjapan.net/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://utechjapan.net/post/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://utechjapan.net/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://utechjapan.net/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://utechjapan.net/">Home</a>&nbsp;»&nbsp;<a href="https://utechjapan.net/categories/">Categories</a></div>
+  <h1>
+    Homelab Guides
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Running Docker Containers on a Raspberry Pi: A Step-by-Step Guide
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Docker containers are lightweight and portable, making them a great tool for running applications in your homelab. A Raspberry Pi is an ideal low-cost, low-power device for hosting Docker containers. This guide will walk you through setting up Docker on a Raspberry Pi and deploying your first container.
+What You’ll Need A Raspberry Pi (recommended: Raspberry Pi 3, 4, or newer). MicroSD card with Raspberry Pi OS Lite installed. A stable internet connection. Basic knowledge of Linux commands. Step 1: Update and Prepare Your Raspberry Pi Log into your Raspberry Pi via SSH: ssh pi@&lt;raspberry_pi_ip_address&gt; Update and upgrade the system packages: sudo apt update &amp;&amp; sudo apt upgrade -y Install prerequisite packages: sudo apt install -y apt-transport-https ca-certificates curl software-properties-common Step 2: Install Docker on the Raspberry Pi Download the official Docker installation script: curl -fsSL https://get.docker.com -o get-docker.sh Run the installation script: sudo sh get-docker.sh Add your user to the docker group (replace pi with your username if different): sudo usermod -aG docker pi Log out and back in to apply the changes.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Running Docker Containers on a Raspberry Pi: A Step-by-Step Guide" href="https://utechjapan.net/post/running-docker-containers-on-a-raspberry-pi-a-step-by-step-guide/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Securing Your HomeLab: Best Practices for Firewall and VPN Setup
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Running a homelab introduces exciting possibilities, but it also opens potential security vulnerabilities. Securing your homelab with a firewall and VPN ensures safe access to your systems and protects your network from unauthorized intrusions. In this guide, we’ll explore best practices for setting up a secure firewall and VPN for your homelab.
+What You’ll Need A dedicated router or a device to run firewall software (e.g., pfSense, OPNSense). VPN software or hardware (e.g., WireGuard, OpenVPN). Basic networking knowledge for configuring IPs and port forwarding. Step 1: Set Up a Dedicated Firewall Option 1: Install pfSense Download pfSense: Get the latest ISO from the pfSense download page. Create a Bootable USB Drive: Use Rufus or similar tools to flash the ISO onto a USB drive. Install pfSense on Your Firewall Device: Boot from the USB drive and follow the installation wizard. Initial Configuration: Access the pfSense web interface at http://192.168.1.1. Configure the WAN (internet) and LAN (internal network) interfaces. Option 2: Install OPNSense OPNSense is a robust alternative to pfSense. The installation steps are nearly identical.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Securing Your HomeLab: Best Practices for Firewall and VPN Setup" href="https://utechjapan.net/post/securing-your-homelab-best-practices-for-firewall-and-vpn-setup/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Self-Hosting GitLab: A Guide to Version Control in Your HomeLab
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Self-hosting GitLab in your homelab allows you to manage code repositories, CI/CD pipelines, and collaborative development projects in a secure, private environment. This guide walks you through installing and configuring GitLab on your homelab server.
+What You’ll Need A server or virtual machine with at least: 4 GB RAM and 2 CPUs (recommended for smaller deployments). 20 GB of storage (more for large repositories or CI/CD). A Linux-based OS (Ubuntu 20.04 or newer is recommended). A static IP or domain name (for remote access). Step 1: Update and Prepare Your Server Log into your server: ssh user@&lt;server_ip&gt; Update the system packages: sudo apt update &amp;&amp; sudo apt upgrade -y Install dependencies: sudo apt install -y curl openssh-server ca-certificates Step 2: Install GitLab Add the GitLab repository: curl -s [https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh](https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh) | sudo bash Install GitLab:
+Replace &lt;your-domain&gt; with your server’s domain or IP: sudo EXTERNAL_URL=&#34;http://&lt;your-domain&gt;&#34; apt install -y gitlab-ee Run the GitLab reconfiguration script: sudo gitlab-ctl reconfigure Step 3: Access the GitLab Web Interface Open your web browser and go to http://&lt;your-domain&gt;. Set a password for the default root user on the first login. Log in using the root username and your new password. Step 4: Configure GitLab Set up email notifications: Edit the /etc/gitlab/gitlab.rb file and configure SMTP settings. Reconfigure GitLab: sudo gitlab-ctl reconfigure Create a new project: Navigate to the Projects tab in the web interface. Click New Project and follow the wizard to create your repository. Step 5: Connect to Your Repository Clone the repository to your local machine: git clone http://&lt;your-domain&gt;/&lt;namespace&gt;/&lt;repository&gt;.git Push your code to the repository: cd &lt;repository&gt; git add . git commit -m &#34;Initial commit&#34; git push origin main Step 6: Enable SSL (Optional) Install Certbot for Let’s Encrypt: sudo apt install -y certbot Generate an SSL certificate: sudo certbot certonly --standalone -d &lt;your-domain&gt; Update GitLab configuration:
+Edit /etc/gitlab/gitlab.rb: external_url &#34;https://&lt;your-domain&gt;&#34; nginx[&#39;ssl_certificate&#39;] = &#34;/etc/letsencrypt/live/&lt;your-domain&gt;/fullchain.pem&#34; nginx[&#39;ssl_certificate_key&#39;] = &#34;/etc/letsencrypt/live/&lt;your-domain&gt;/privkey.pem&#34; Reconfigure GitLab: sudo gitlab-ctl reconfigure Step 7: Configure CI/CD Pipelines (Optional) Add a .gitlab-ci.yml file to your repository root: yaml stages: - build build-job: stage: build script: - echo &#34;Hello, World!&#34; Commit and push the file: git add .gitlab-ci.yml git commit -m &#34;Add CI/CD pipeline&#34; git push origin main 2. Check the CI/CD &gt; Pipelines section in the GitLab web interface to monitor the job.: FAQs Q: Is GitLab free to use?
+A: Yes, GitLab offers a free tier with all essential features for self-hosting. Paid tiers include advanced features like enhanced security and analytics.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Self-Hosting GitLab: A Guide to Version Control in Your HomeLab" href="https://utechjapan.net/post/self-hosting-gitlab-a-guide-to-version-control-in-your-homelab/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Setting Up a Kubernetes (K8s) Cluster at Home for Beginners
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Kubernetes (K8s) is a powerful container orchestration platform used to manage applications at scale. Building a Kubernetes cluster in your homelab allows you to experiment with cloud-native concepts, deploy containerized applications, and learn skills for production-grade environments. In this guide, we’ll walk through setting up a basic Kubernetes cluster at home.
+What You’ll Need At least two devices (can be physical machines, VMs, or Raspberry Pis): One as a control plane (master node). One or more as worker nodes. Linux installed on each device (Ubuntu 20.04 or newer is recommended). A reliable network connection. Basic understanding of Linux commands. Step 1: Prepare the Nodes Install Ubuntu on all devices (or use your preferred Linux distro). Update and upgrade the system on each node: sudo apt update &amp;&amp; sudo apt upgrade -y Set static IP addresses for all nodes to ensure stability in the cluster. Configure this via /etc/netplan or your router’s DHCP settings. Disable swap on all nodes to meet Kubernetes requirements: sudo swapoff -a To make it permanent, edit /etc/fstab and comment out the swap entry.
+5. Install containerd as the container runtime:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to Setting Up a Kubernetes (K8s) Cluster at Home for Beginners" href="https://utechjapan.net/post/setting-up-a-kubernetes-k8s-cluster-at-home-for-beginners/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Setting Up a WireGuard VPN to Access Your HomeLab Remotely
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What You’ll Need A server or virtual machine to host the WireGuard VPN. Basic knowledge of networking and port forwarding. A static public IP or dynamic DNS for remote access. Step 1: Install WireGuard Update and install WireGuard:
+sudo apt update &amp;&amp; sudo apt install -y wireguard Verify the installation:
+wg --version Step 2: Generate Keys Generate the server’s private and public keys:
+wg genkey | tee server_private.key | wg pubkey &gt; server_public.key Save the keys securely:
+The private key will be in server_private.key, and the public key will be in server_public.key.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Setting Up a WireGuard VPN to Access Your HomeLab Remotely" href="https://utechjapan.net/post/setting-up-a-wireguard-vpn-to-access-your-homelab-remotely/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://utechjapan.net/categories/homelab-guides/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://utechjapan.net/">UTechLabs</a>. Rights reserved.</span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

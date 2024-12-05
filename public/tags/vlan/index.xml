@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>VLAN on UTechLabs</title>
+    <link>https://utechjapan.net/tags/vlan/</link>
+    <description>Recent content in VLAN on UTechLabs</description>
+    <generator>Hugo -- 0.139.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://utechjapan.net/tags/vlan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HomeLab Networking: Configuring VLANs for Segmented Traffic</title>
+      <link>https://utechjapan.net/post/homelab-networking-configuring-vlans-for-segmented-traffic/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/homelab-networking-configuring-vlans-for-segmented-traffic/</guid>
+      <description>&lt;p&gt;A well-designed network is essential for a secure and efficient homelab. VLANs (Virtual Local Area Networks) allow you to segment your network into separate logical groups, improving security, performance, and manageability. In this guide, we’ll cover the basics of VLANs and walk you through setting them up in your homelab.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A managed switch that supports VLANs (e.g., TP-Link, Netgear, or Ubiquiti).&lt;/li&gt;
+&lt;li&gt;A router or firewall capable of VLAN tagging (e.g., pfSense, OPNSense).&lt;/li&gt;
+&lt;li&gt;Basic understanding of IP addresses and subnetting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-understand-vlan-basics&#34;&gt;Step 1: Understand VLAN Basics&lt;/h2&gt;
+&lt;h3 id=&#34;what-are-vlans&#34;&gt;&lt;strong&gt;What Are VLANs?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;VLANs divide a physical network into multiple virtual networks. Devices on different VLANs cannot communicate directly without a router or Layer 3 switch.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

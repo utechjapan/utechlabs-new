@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>High-Availability on UTechLabs</title>
+    <link>https://utechjapan.net/tags/high-availability/</link>
+    <description>Recent content in High-Availability on UTechLabs</description>
+    <generator>Hugo -- 0.139.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://utechjapan.net/tags/high-availability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a High-Availability Setup for Your HomeLab Using Keepalived</title>
+      <link>https://utechjapan.net/post/building-a-high-availability-setup-for-your-homelab-using-keepalived/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/building-a-high-availability-setup-for-your-homelab-using-keepalived/</guid>
+      <description>&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;At least two servers or virtual machines (referred to as primary and backup nodes).&lt;/li&gt;
+&lt;li&gt;A Linux-based OS installed on both (Ubuntu 20.04 or newer is recommended).&lt;/li&gt;
+&lt;li&gt;A shared virtual IP address (VIP) for failover.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-install-keepalived&#34;&gt;Step 1: Install Keepalived&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Log into both nodes and update the system&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install Keepalived on both nodes&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install -y keepalived
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Verify the installation&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

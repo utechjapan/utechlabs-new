@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jellyfin on UTechLabs</title>
+    <link>https://utechjapan.net/tags/jellyfin/</link>
+    <description>Recent content in Jellyfin on UTechLabs</description>
+    <generator>Hugo -- 0.139.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://utechjapan.net/tags/jellyfin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Create a Media Server at Home with Plex and Jellyfin</title>
+      <link>https://utechjapan.net/post/how-to-create-a-media-server-at-home-with-plex-and-jellyfin/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/how-to-create-a-media-server-at-home-with-plex-and-jellyfin/</guid>
+      <description>&lt;p&gt;Creating a home media server is one of the most rewarding homelab projects, allowing you to centralize and stream your media collection across all devices. Plex and Jellyfin are two popular tools for setting up a media server, each offering unique features. This guide walks you through installing and configuring both options so you can pick the one that works best for you.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A dedicated machine (e.g., Raspberry Pi, NAS, or a repurposed desktop/laptop).&lt;/li&gt;
+&lt;li&gt;A storage device for your media files (e.g., HDDs, SSDs, or a NAS).&lt;/li&gt;
+&lt;li&gt;A stable internet connection for remote access and metadata fetching.&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Linux commands (optional if using GUI-based installation).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-decide-between-plex-and-jellyfin&#34;&gt;Step 1: Decide Between Plex and Jellyfin&lt;/h2&gt;
+&lt;h3 id=&#34;plex&#34;&gt;&lt;strong&gt;Plex&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pros&lt;/strong&gt;: Polished interface, remote streaming capabilities, wide device compatibility.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cons&lt;/strong&gt;: Some features require a subscription (Plex Pass).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;jellyfin&#34;&gt;&lt;strong&gt;Jellyfin&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pros&lt;/strong&gt;: 100% free and open source, privacy-focused, and customizable.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cons&lt;/strong&gt;: Slightly less polished interface compared to Plex.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Choose your preferred software based on these factors, or try both to see which suits your needs.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

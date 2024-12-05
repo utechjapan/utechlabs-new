@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Servers on UTechLabs</title>
+    <link>https://utechjapan.net/tags/servers/</link>
+    <description>Recent content in Servers on UTechLabs</description>
+    <generator>Hugo -- 0.139.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://utechjapan.net/tags/servers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploying a Proxmox VE Server for Virtualization in Your HomeLab</title>
+      <link>https://utechjapan.net/post/deploying-a-proxmox-ve-server-for-virtualization-in-your-homelab/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/deploying-a-proxmox-ve-server-for-virtualization-in-your-homelab/</guid>
+      <description>&lt;p&gt;Proxmox Virtual Environment (Proxmox VE) is a powerful, open-source platform for virtualization. It allows you to run virtual machines (VMs) and containers efficiently, making it perfect for homelabs. This guide walks you through deploying a Proxmox VE server, enabling you to consolidate workloads and experiment with virtualized environments.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A dedicated machine for Proxmox VE (minimum specs: 4 GB RAM, 64-bit processor, and 32 GB storage).&lt;/li&gt;
+&lt;li&gt;Proxmox VE ISO file from the &lt;a href=&#34;https://www.proxmox.com/en/downloads&#34;&gt;Proxmox download page&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A USB drive (at least 8 GB) for creating bootable media.&lt;/li&gt;
+&lt;li&gt;A reliable internet connection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-prepare-the-installation-media&#34;&gt;Step 1: Prepare the Installation Media&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the Proxmox VE ISO file from the official website.&lt;/li&gt;
+&lt;li&gt;Use a tool like &lt;a href=&#34;https://rufus.ie/&#34;&gt;Rufus&lt;/a&gt; or &lt;a href=&#34;https://www.balena.io/etcher/&#34;&gt;balenaEtcher&lt;/a&gt; to create a bootable USB drive with the Proxmox ISO.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-2-install-proxmox-ve&#34;&gt;Step 2: Install Proxmox VE&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Insert the bootable USB into your server and boot from it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HomeLab Essentials: Choosing the Right Hardware for Your Projects</title>
+      <link>https://utechjapan.net/post/choosing-the-right-hardware-for-your-projects/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/choosing-the-right-hardware-for-your-projects/</guid>
+      <description>&lt;p&gt;Building a homelab is an exciting way to explore technology and learn new skills. However, choosing the right hardware can make or break your experience. Whether you’re hosting a Pi-hole server, deploying Kubernetes, or running a media server, this guide will help you select the best hardware for your homelab needs.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;key-factors-to-consider&#34;&gt;Key Factors to Consider&lt;/h2&gt;
+&lt;h3 id=&#34;1-purpose-of-the-homelab&#34;&gt;&lt;strong&gt;1. Purpose of the Homelab&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Identify your goals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Basic Projects&lt;/strong&gt;: DNS servers, lightweight apps, and monitoring tools.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Intermediate Projects&lt;/strong&gt;: Virtualization, Docker, and small Kubernetes clusters.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Advanced Projects&lt;/strong&gt;: High-performance computing, large-scale storage, and multi-node clusters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-hardware-budget&#34;&gt;&lt;strong&gt;2. Hardware Budget&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Your budget will dictate your hardware choices:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

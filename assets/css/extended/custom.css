@@ -1,0 +1,35 @@
+/* Smaller title sizes */
+h1 {
+    font-size: 2.2rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Adjust text size for smartphones */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Change hover color to a darker yellow */
+header a:hover,
+.profile a:hover,
+.menu a:hover {
+    color: #FFC107; /* Warm amber yellow */
+}
+
+/* Optional: Smooth transition effect */
+header a, .profile a, .menu a {
+    transition: color 0.3s ease-in-out;
+}

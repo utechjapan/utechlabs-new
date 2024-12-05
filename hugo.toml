@@ -14,6 +14,9 @@ buildFuture = true
     [markup.goldmark.parser]
       attribute = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"] 
+
 [params]
   defaultTheme = "dark" # Set default theme to dark
   disableThemeToggle = false
@@ -27,12 +30,12 @@ buildFuture = true
   dateFormat = "2006-01-02"
   logo = "images/logo.png"
   favicon = "images/favicon.ico"
-  disableSearch = false
+  disableSearch = false # Enable search functionality
   showTags = true
   showRelatedPosts = true
   enableFontAwesome = true
   showToc = true
-
+ 
   [params.profileMode]
     enabled = true
     title = "UTechLabs"
@@ -42,7 +45,7 @@ buildFuture = true
     imageWidth = 120
     imageHeight = 120
     buttons = [
-      { name = "Blog", url = "/posts/" },
+      { name = "Blog", url = "/post/" },
       { name = "GitHub", url = "https://github.com/utechjapan" },
       { name = "About", url = "/about/" },
     ]
@@ -57,11 +60,11 @@ buildFuture = true
 
   [[params.socialIcons]]
     name = "twitter"
-    url = "https://twitter.com/utechjapan"
+    url = "https://twitter.com/u_techlab"
 
   [[params.socialIcons]]
     name = "youtube"
-    url = "https://youtube.com/utechlabs"
+    url = "https://youtube.com/utechlab"
 
   [params.comments]
     giscus = true
@@ -85,7 +88,7 @@ buildFuture = true
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    url = "/posts/"
+    url = "/post/"
     weight = 2
 
   [[menu.main]]
@@ -93,6 +96,12 @@ buildFuture = true
     name = "About"
     url = "/about/"
     weight = 3
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 4
 
 [assets]
   disableFingerprinting = true

@@ -2,6 +2,7 @@
 title: "About"
 date: 2024-01-01T00:00:00+09:00
 ---
+
 # About Me
 
 I'm **Chikara Inohara**, a technology enthusiast and innovator based in Japan. With a deep passion for exploring cutting-edge technologies and sharing knowledge, I created **UTechLabs** as a platform to document my journey and help others navigate the ever-evolving world of technology.
@@ -27,19 +28,9 @@ At UTechLabs, my goal is to:
 
 I'm always excited to connect with others in the tech community. Feel free to reach out or follow me on:
 
-<div class="social-icons">
-  <a href="https://github.com/utechjapan" target="_blank" aria-label="GitHub">
-    <i class="fab fa-github"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/chikara-inohara-a26bb9143/" target="_blank" aria-label="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="https://twitter.com/utechjapan" target="_blank" aria-label="Twitter">
-    <i class="fab fa-twitter"></i>
-  </a>
-  <a href="https://youtube.com/utechlabs" target="_blank" aria-label="YouTube">
-    <i class="fab fa-youtube"></i>
-  </a>
-</div>
+- [GitHub](https://github.com/utechjapan) {{< icon name="github" >}}
+- [LinkedIn](https://www.linkedin.com/in/chikara-inohara-a26bb9143/) {{< icon name="linkedin" >}}
+- [Twitter](https://twitter.com/u_techlabs) {{< icon name="twitter" >}}
+- [YouTube](https://youtube.com/utechlab) {{< icon name="youtube" >}}
 
 Thank you for visiting **UTechLabs**! I hope you find the content helpful and informative. Whether you're setting up your first HomeLab or diving into advanced topics, I'm here to share knowledge and learn alongside you.

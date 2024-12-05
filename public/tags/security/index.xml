@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Security on UTechLabs</title>
+    <link>https://utechjapan.net/tags/security/</link>
+    <description>Recent content in Security on UTechLabs</description>
+    <generator>Hugo -- 0.139.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://utechjapan.net/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Securing Your HomeLab: Best Practices for Firewall and VPN Setup</title>
+      <link>https://utechjapan.net/post/securing-your-homelab-best-practices-for-firewall-and-vpn-setup/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/securing-your-homelab-best-practices-for-firewall-and-vpn-setup/</guid>
+      <description>&lt;p&gt;Running a homelab introduces exciting possibilities, but it also opens potential security vulnerabilities. Securing your homelab with a firewall and VPN ensures safe access to your systems and protects your network from unauthorized intrusions. In this guide, we’ll explore best practices for setting up a secure firewall and VPN for your homelab.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A dedicated router or a device to run firewall software (e.g., pfSense, OPNSense).&lt;/li&gt;
+&lt;li&gt;VPN software or hardware (e.g., WireGuard, OpenVPN).&lt;/li&gt;
+&lt;li&gt;Basic networking knowledge for configuring IPs and port forwarding.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-set-up-a-dedicated-firewall&#34;&gt;Step 1: Set Up a Dedicated Firewall&lt;/h2&gt;
+&lt;h3 id=&#34;option-1-install-pfsense&#34;&gt;&lt;strong&gt;Option 1: Install pfSense&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Download pfSense&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Get the latest ISO from the &lt;a href=&#34;https://www.pfsense.org/download/&#34;&gt;pfSense download page&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create a Bootable USB Drive&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Use &lt;a href=&#34;https://rufus.ie/&#34;&gt;Rufus&lt;/a&gt; or similar tools to flash the ISO onto a USB drive.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install pfSense on Your Firewall Device&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Boot from the USB drive and follow the installation wizard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Initial Configuration&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Access the pfSense web interface at &lt;code&gt;http://192.168.1.1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Configure the WAN (internet) and LAN (internal network) interfaces.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;option-2-install-opnsense&#34;&gt;&lt;strong&gt;Option 2: Install OPNSense&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;OPNSense is a robust alternative to pfSense. The installation steps are nearly identical.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Version Control on UTechLabs</title>
+    <link>https://utechjapan.net/tags/version-control/</link>
+    <description>Recent content in Version Control on UTechLabs</description>
+    <generator>Hugo -- 0.139.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://utechjapan.net/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Self-Hosting GitLab: A Guide to Version Control in Your HomeLab</title>
+      <link>https://utechjapan.net/post/self-hosting-gitlab-a-guide-to-version-control-in-your-homelab/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/self-hosting-gitlab-a-guide-to-version-control-in-your-homelab/</guid>
+      <description>&lt;p&gt;Self-hosting GitLab in your homelab allows you to manage code repositories, CI/CD pipelines, and collaborative development projects in a secure, private environment. This guide walks you through installing and configuring GitLab on your homelab server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A server or virtual machine with at least:
+&lt;ul&gt;
+&lt;li&gt;4 GB RAM and 2 CPUs (recommended for smaller deployments).&lt;/li&gt;
+&lt;li&gt;20 GB of storage (more for large repositories or CI/CD).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A Linux-based OS (Ubuntu 20.04 or newer is recommended).&lt;/li&gt;
+&lt;li&gt;A static IP or domain name (for remote access).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-update-and-prepare-your-server&#34;&gt;Step 1: Update and Prepare Your Server&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Log into your server&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh user@&amp;lt;server_ip&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Update the system packages&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Install dependencies&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install -y curl openssh-server ca-certificates
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;step-2-install-gitlab&#34;&gt;Step 2: Install GitLab&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Add the GitLab repository&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl -s [https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh](https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh) | sudo bash
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Install GitLab&lt;/strong&gt;:&lt;br&gt;
+Replace &lt;code&gt;&amp;lt;your-domain&amp;gt;&lt;/code&gt; with your server’s domain or IP:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo EXTERNAL_URL=&amp;#34;http://&amp;lt;your-domain&amp;gt;&amp;#34; apt install -y gitlab-ee
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Run the GitLab reconfiguration script&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo gitlab-ctl reconfigure
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;step-3-access-the-gitlab-web-interface&#34;&gt;Step 3: Access the GitLab Web Interface&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open your web browser and go to &lt;code&gt;http://&amp;lt;your-domain&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Set a password for the default &lt;code&gt;root&lt;/code&gt; user on the first login.&lt;/li&gt;
+&lt;li&gt;Log in using the &lt;code&gt;root&lt;/code&gt; username and your new password.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-4-configure-gitlab&#34;&gt;Step 4: Configure GitLab&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Set up email notifications&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Edit the &lt;code&gt;/etc/gitlab/gitlab.rb&lt;/code&gt; file and configure SMTP settings.&lt;/li&gt;
+&lt;li&gt;Reconfigure GitLab:
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo gitlab-ctl reconfigure
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Create a new project&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Navigate to the &lt;strong&gt;Projects&lt;/strong&gt; tab in the web interface.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;New Project&lt;/strong&gt; and follow the wizard to create your repository.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-5-connect-to-your-repository&#34;&gt;Step 5: Connect to Your Repository&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Clone the repository to your local machine&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone http://&amp;lt;your-domain&amp;gt;/&amp;lt;namespace&amp;gt;/&amp;lt;repository&amp;gt;.git
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Push your code to the repository&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd &amp;lt;repository&amp;gt; git add . git commit -m &amp;#34;Initial commit&amp;#34; git push origin main
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;step-6-enable-ssl-optional&#34;&gt;Step 6: Enable SSL (Optional)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Install Certbot for Let&amp;rsquo;s Encrypt&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install -y certbot
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Generate an SSL certificate&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo certbot certonly --standalone -d &amp;lt;your-domain&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Update GitLab configuration&lt;/strong&gt;:&lt;br&gt;
+Edit &lt;code&gt;/etc/gitlab/gitlab.rb&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;external_url &amp;#34;https://&amp;lt;your-domain&amp;gt;&amp;#34; nginx[&amp;#39;ssl_certificate&amp;#39;] = &amp;#34;/etc/letsencrypt/live/&amp;lt;your-domain&amp;gt;/fullchain.pem&amp;#34; nginx[&amp;#39;ssl_certificate_key&amp;#39;] = &amp;#34;/etc/letsencrypt/live/&amp;lt;your-domain&amp;gt;/privkey.pem&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Reconfigure GitLab&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo gitlab-ctl reconfigure
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;step-7-configure-cicd-pipelines-optional&#34;&gt;Step 7: Configure CI/CD Pipelines (Optional)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Add a &lt;code&gt;.gitlab-ci.yml&lt;/code&gt; file to your repository root:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yaml
+stages:
+  - build
+
+build-job:
+  stage: build
+  script:
+    - echo &amp;#34;Hello, World!&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Commit and push the file&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git add .gitlab-ci.yml
+git commit -m &amp;#34;Add CI/CD pipeline&amp;#34;
+git push origin main
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;strong&gt;2. Check the &lt;strong&gt;CI/CD &amp;gt; Pipelines&lt;/strong&gt; section in the GitLab web interface to monitor the job.&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;faqs&#34;&gt;FAQs&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Q: Is GitLab free to use?&lt;/strong&gt;&lt;br&gt;
+A: Yes, GitLab offers a free tier with all essential features for self-hosting. Paid tiers include advanced features like enhanced security and analytics.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

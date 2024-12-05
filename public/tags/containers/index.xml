@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Containers on UTechLabs</title>
+    <link>https://utechjapan.net/tags/containers/</link>
+    <description>Recent content in Containers on UTechLabs</description>
+    <generator>Hugo -- 0.139.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://utechjapan.net/tags/containers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running Docker Containers on a Raspberry Pi: A Step-by-Step Guide</title>
+      <link>https://utechjapan.net/post/running-docker-containers-on-a-raspberry-pi-a-step-by-step-guide/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/running-docker-containers-on-a-raspberry-pi-a-step-by-step-guide/</guid>
+      <description>&lt;p&gt;Docker containers are lightweight and portable, making them a great tool for running applications in your homelab. A Raspberry Pi is an ideal low-cost, low-power device for hosting Docker containers. This guide will walk you through setting up Docker on a Raspberry Pi and deploying your first container.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A Raspberry Pi (recommended: Raspberry Pi 3, 4, or newer).&lt;/li&gt;
+&lt;li&gt;MicroSD card with Raspberry Pi OS Lite installed.&lt;/li&gt;
+&lt;li&gt;A stable internet connection.&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Linux commands.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-update-and-prepare-your-raspberry-pi&#34;&gt;Step 1: Update and Prepare Your Raspberry Pi&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Log into your Raspberry Pi via SSH&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh pi@&amp;lt;raspberry_pi_ip_address&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Update and upgrade the system packages&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Install prerequisite packages&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;step-2-install-docker-on-the-raspberry-pi&#34;&gt;Step 2: Install Docker on the Raspberry Pi&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Download the official Docker installation script&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl -fsSL https://get.docker.com -o get-docker.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Run the installation script&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo sh get-docker.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Add your user to the &lt;code&gt;docker&lt;/code&gt; group&lt;/strong&gt; (replace &lt;code&gt;pi&lt;/code&gt; with your username if different):&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo usermod -aG docker pi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Log out and back in to apply the changes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setting Up a Kubernetes (K8s) Cluster at Home for Beginners</title>
+      <link>https://utechjapan.net/post/setting-up-a-kubernetes-k8s-cluster-at-home-for-beginners/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/setting-up-a-kubernetes-k8s-cluster-at-home-for-beginners/</guid>
+      <description>&lt;p&gt;Kubernetes (K8s) is a powerful container orchestration platform used to manage applications at scale. Building a Kubernetes cluster in your homelab allows you to experiment with cloud-native concepts, deploy containerized applications, and learn skills for production-grade environments. In this guide, we’ll walk through setting up a basic Kubernetes cluster at home.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;At least two devices (can be physical machines, VMs, or Raspberry Pis):
+&lt;ul&gt;
+&lt;li&gt;One as a control plane (master node).&lt;/li&gt;
+&lt;li&gt;One or more as worker nodes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Linux installed on each device (Ubuntu 20.04 or newer is recommended).&lt;/li&gt;
+&lt;li&gt;A reliable network connection.&lt;/li&gt;
+&lt;li&gt;Basic understanding of Linux commands.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-prepare-the-nodes&#34;&gt;Step 1: Prepare the Nodes&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Install Ubuntu&lt;/strong&gt; on all devices (or use your preferred Linux distro).&lt;/li&gt;
+&lt;li&gt;Update and upgrade the system on each node:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Set static IP addresses for all nodes to ensure stability in the cluster. Configure this via &lt;code&gt;/etc/netplan&lt;/code&gt; or your router&amp;rsquo;s DHCP settings.&lt;/li&gt;
+&lt;li&gt;Disable swap on all nodes to meet Kubernetes requirements:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo swapoff -a
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To make it permanent, edit &lt;code&gt;/etc/fstab&lt;/code&gt; and comment out the swap entry.&lt;br&gt;
+5. Install &lt;code&gt;containerd&lt;/code&gt; as the container runtime:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
