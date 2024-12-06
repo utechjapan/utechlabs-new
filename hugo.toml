@@ -60,11 +60,11 @@ buildFuture = true
 
   [[params.socialIcons]]
     name = "twitter"
-    url = "https://twitter.com/u_techlab"
+    url = "https://twitter.com/_utechlab"
 
   [[params.socialIcons]]
     name = "youtube"
-    url = "https://youtube.com/utechlab"
+    url = "https://www.youtube.com/channel/UCWlf8tLDjoS07y3yHKqRVww"
 
   [params.comments]
     giscus = true

@@ -30,7 +30,7 @@ I'm always excited to connect with others in the tech community. Feel free to re
 
 - [GitHub](https://github.com/utechjapan) {{< icon name="github" >}}
 - [LinkedIn](https://www.linkedin.com/in/chikara-inohara-a26bb9143/) {{< icon name="linkedin" >}}
-- [Twitter](https://twitter.com/u_techlabs) {{< icon name="twitter" >}}
-- [YouTube](https://youtube.com/utechlab) {{< icon name="youtube" >}}
+- [Twitter](https://twitter.com/_utechlab) {{< icon name="twitter" >}}
+- [YouTube](https://www.youtube.com/channel/UCWlf8tLDjoS07y3yHKqRVww) {{< icon name="youtube" >}}
 
 Thank you for visiting **UTechLabs**! I hope you find the content helpful and informative. Whether you're setting up your first HomeLab or diving into advanced topics, I'm here to share knowledge and learn alongside you.

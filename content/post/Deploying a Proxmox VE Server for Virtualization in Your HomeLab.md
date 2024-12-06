@@ -80,7 +80,6 @@ apt update && apt full-upgrade -y
 1. Navigate to the **Datacenter** section in the web interface.  
 2. Configure storage for VMs and containers:  
 - Add local storage for ISO images and backups.  
-![ISOuploadLocation](/images/proxmoxiso.png)
 - Add networked storage (NFS, CIFS) if needed.
 
 ---
@@ -89,7 +88,7 @@ apt update && apt full-upgrade -y
 
 1. Upload an ISO image (e.g., Ubuntu) to your Proxmox storage:  
 - Go to **Datacenter** > **Storage** > **ISO Images** > **Upload**.  
-
+![ISOuploadLocation](/images/proxmoxiso.png)
 2. Create a new VM:  
 - Navigate to **Create VM** in the Proxmox web interface.  
 - Follow the wizard to assign resources like CPU, RAM, and disk space.  
