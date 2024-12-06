@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Password on UTechLab</title>
+    <link>https://utechjapan.net/tags/password/</link>
+    <description>Recent content in Password on UTechLab</description>
+    <generator>Hugo -- 0.139.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://utechjapan.net/tags/password/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting Up a Self-Hosted Password Manager with Bitwarden or Vaultwarden</title>
+      <link>https://utechjapan.net/post/setting-up-a-self-hosted-password-manager-with-bitwarden-or-vaultwarden/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/setting-up-a-self-hosted-password-manager-with-bitwarden-or-vaultwarden/</guid>
+      <description>&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A server or virtual machine (minimum: 1 GB RAM and 1 CPU).&lt;/li&gt;
+&lt;li&gt;Docker installed on your server.&lt;/li&gt;
+&lt;li&gt;A static IP or domain name for accessing the password manager.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-decide-between-bitwarden-and-vaultwarden&#34;&gt;Step 1: Decide Between Bitwarden and Vaultwarden&lt;/h2&gt;
+&lt;h3 id=&#34;bitwarden&#34;&gt;&lt;strong&gt;Bitwarden&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Official version with robust features and frequent updates.&lt;/li&gt;
+&lt;li&gt;Requires more resources and supports paid features like OTP generation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;vaultwarden-formerly-bitwarden_rs&#34;&gt;&lt;strong&gt;Vaultwarden (formerly Bitwarden_rs)&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Lightweight, community-built alternative to Bitwarden.&lt;/li&gt;
+&lt;li&gt;Perfect for homelabs or low-resource servers.&lt;/li&gt;
+&lt;li&gt;Compatible with most Bitwarden clients.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For most homelab users, &lt;strong&gt;Vaultwarden&lt;/strong&gt; is recommended due to its lightweight nature.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

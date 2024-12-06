@@ -124,6 +124,67 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">How to Create a Media Server at Home with Plex and Jellyfin
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Creating a home media server is one of the most rewarding homelab projects, allowing you to centralize and stream your media collection across all devices. Plex and Jellyfin are two popular tools for setting up a media server, each offering unique features. This guide walks you through installing and configuring both options so you can pick the one that works best for you.
+What You’ll Need A dedicated machine (e.g., Raspberry Pi, NAS, or a repurposed desktop/laptop). A storage device for your media files (e.g., HDDs, SSDs, or a NAS). A stable internet connection for remote access and metadata fetching. Basic knowledge of Linux commands (optional if using GUI-based installation). Step 1: Decide Between Plex and Jellyfin Plex Pros: Polished interface, remote streaming capabilities, wide device compatibility. Cons: Some features require a subscription (Plex Pass). Jellyfin Pros: 100% free and open source, privacy-focused, and customizable. Cons: Slightly less polished interface compared to Plex. Choose your preferred software based on these factors, or try both to see which suits your needs.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to How to Create a Media Server at Home with Plex and Jellyfin" href="https://utechjapan.net/post/how-to-create-a-media-server-at-home-with-plex-and-jellyfin/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to Deploy Nextcloud for Private Cloud Storage in Your HomeLab
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Nextcloud is an open-source platform for private cloud storage and collaboration. By hosting Nextcloud in your homelab, you can securely store files, manage calendars, and sync data across devices—all without relying on third-party services. This guide walks you through installing and configuring Nextcloud on your homelab server.
+What You’ll Need A server or virtual machine with at least: 2 GB RAM and 1 CPU (for small deployments). 20 GB of storage (or more for large file collections). Linux installed (Ubuntu 20.04 or newer is recommended). A static IP or domain name. Step 1: Update and Prepare Your Server Log into your server: ssh user@&lt;server_ip&gt; Update the system packages: sudo apt update &amp;&amp; sudo apt upgrade -y Install necessary dependencies: sudo apt install -y apache2 mariadb-server libapache2-mod-php php php-mysql php-xml php-mbstring php-curl php-zip php-gd unzip Step 2: Set Up the Database Secure MariaDB: sudo mysql_secure_installation Follow the prompts to set a root password and remove unnecessary settings.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to How to Deploy Nextcloud for Private Cloud Storage in Your HomeLab" href="https://utechjapan.net/post/how-to-deploy-nextcloud-for-private-cloud-storage-in-your-homelab/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Monitoring and Alerting in Your HomeLab with Prometheus and Grafana
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What You’ll Need A server or virtual machine to run Prometheus and Grafana (recommended: 2 GB RAM, 2 CPUs). Docker installed (or native installation on Linux). Basic understanding of system metrics and networking. Step 1: Install Prometheus Create a Prometheus data directory:
+mkdir -p ~/prometheus/data Create a Prometheus configuration file:
+nano ~/prometheus/prometheus.yml Add the following content to scrape metrics from localhost:
+global: scrape_interval: 15s scrape_configs: - job_name: &#39;prometheus&#39; static_configs: - targets: [&#39;localhost:9090&#39;] Run Prometheus using Docker:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Monitoring and Alerting in Your HomeLab with Prometheus and Grafana" href="https://utechjapan.net/post/monitoring-and-alerting-in-your-homelab-with-prometheus-and-grafana/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Running a Pi-hole and Unbound Setup for Enhanced DNS Privacy
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What You’ll Need A Raspberry Pi or server running Pi-hole. Basic knowledge of Linux commands. An active internet connection. Step 1: Update Your Pi-hole Installation Log into your Pi-hole server via SSH:
+ssh pi@&lt;pi-hole_ip_address&gt; Update Pi-hole to the latest version:
+pihole -up Ensure the system is up to date:
+sudo apt update &amp;&amp; sudo apt upgrade -y Step 2: Install Unbound Install Unbound on your Pi-hole server:
+sudo apt install unbound -y Verify the installation:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Running a Pi-hole and Unbound Setup for Enhanced DNS Privacy" href="https://utechjapan.net/post/running-a-pi-hole-and-unbound-setup-for-enhanced-dns-privacy/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Running Docker Containers on a Raspberry Pi: A Step-by-Step Guide
     </h2>
   </header>
@@ -180,23 +241,6 @@ What You’ll Need At least two devices (can be physical machines, VMs, or Raspb
   </div>
   <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;4 min</footer>
   <a class="entry-link" aria-label="post link to Setting Up a Kubernetes (K8s) Cluster at Home for Beginners" href="https://utechjapan.net/post/setting-up-a-kubernetes-k8s-cluster-at-home-for-beginners/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Setting Up a WireGuard VPN to Access Your HomeLab Remotely
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What You’ll Need A server or virtual machine to host the WireGuard VPN. Basic knowledge of networking and port forwarding. A static public IP or dynamic DNS for remote access. Step 1: Install WireGuard Update and install WireGuard:
-sudo apt update &amp;&amp; sudo apt install -y wireguard Verify the installation:
-wg --version Step 2: Generate Keys Generate the server’s private and public keys:
-wg genkey | tee server_private.key | wg pubkey &gt; server_public.key Save the keys securely:
-The private key will be in server_private.key, and the public key will be in server_public.key.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Setting Up a WireGuard VPN to Access Your HomeLab Remotely" href="https://utechjapan.net/post/setting-up-a-wireguard-vpn-to-access-your-homelab-remotely/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

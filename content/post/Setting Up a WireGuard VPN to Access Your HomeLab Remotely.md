@@ -1,8 +1,14 @@
 ---
-title: "Setting Up a WireGuard VPN to Access Your HomeLab Remotely"
-date: 2024-12-04
-tags: ["homelab", "VPN", "WireGuard", "remote access"]
-categories: ["Homelab Guides"]
+title: Setting Up a WireGuard VPN to Access Your HomeLab Remotely
+date: 2024-12-06
+tags:
+  - homelab
+  - VPN
+  - WireGuard
+  - remote
+  - access
+categories:
+  - Homelab Guides
 draft: false
 showToc: true
 ---

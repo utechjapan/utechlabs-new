@@ -6,8 +6,68 @@
     <description>Recent content in Homelab Guides on UTechLab</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://utechjapan.net/categories/homelab-guides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting Up a Self-Hosted Password Manager with Bitwarden or Vaultwarden</title>
+      <link>https://utechjapan.net/post/setting-up-a-self-hosted-password-manager-with-bitwarden-or-vaultwarden/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/setting-up-a-self-hosted-password-manager-with-bitwarden-or-vaultwarden/</guid>
+      <description>&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A server or virtual machine (minimum: 1 GB RAM and 1 CPU).&lt;/li&gt;
+&lt;li&gt;Docker installed on your server.&lt;/li&gt;
+&lt;li&gt;A static IP or domain name for accessing the password manager.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-decide-between-bitwarden-and-vaultwarden&#34;&gt;Step 1: Decide Between Bitwarden and Vaultwarden&lt;/h2&gt;
+&lt;h3 id=&#34;bitwarden&#34;&gt;&lt;strong&gt;Bitwarden&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Official version with robust features and frequent updates.&lt;/li&gt;
+&lt;li&gt;Requires more resources and supports paid features like OTP generation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;vaultwarden-formerly-bitwarden_rs&#34;&gt;&lt;strong&gt;Vaultwarden (formerly Bitwarden_rs)&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Lightweight, community-built alternative to Bitwarden.&lt;/li&gt;
+&lt;li&gt;Perfect for homelabs or low-resource servers.&lt;/li&gt;
+&lt;li&gt;Compatible with most Bitwarden clients.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For most homelab users, &lt;strong&gt;Vaultwarden&lt;/strong&gt; is recommended due to its lightweight nature.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setting Up a WireGuard VPN to Access Your HomeLab Remotely</title>
+      <link>https://utechjapan.net/post/setting-up-a-wireguard-vpn-to-access-your-homelab-remotely/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/setting-up-a-wireguard-vpn-to-access-your-homelab-remotely/</guid>
+      <description>&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A server or virtual machine to host the WireGuard VPN.&lt;/li&gt;
+&lt;li&gt;Basic knowledge of networking and port forwarding.&lt;/li&gt;
+&lt;li&gt;A static public IP or dynamic DNS for remote access.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-install-wireguard&#34;&gt;Step 1: Install WireGuard&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Update and install WireGuard&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install -y wireguard
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Verify the installation&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wg --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-2-generate-keys&#34;&gt;Step 2: Generate Keys&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Generate the server’s private and public keys&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wg genkey | tee server_private.key | wg pubkey &amp;gt; server_public.key
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Save the keys securely&lt;/strong&gt;:&lt;br&gt;
+The private key will be in &lt;code&gt;server_private.key&lt;/code&gt;, and the public key will be in &lt;code&gt;server_public.key&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Automating Backups in Your HomeLab with Borg and Rclone</title>
       <link>https://utechjapan.net/post/automating-backups-in-your-homelab-with-borg-and-rclone/</link>
@@ -68,6 +128,39 @@
 &lt;p&gt;&lt;strong&gt;Verify the installation&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Creating a Secure File Transfer System with SFTP and Docker</title>
+      <link>https://utechjapan.net/post/creating-a-secure-file-transfer-system-with-sftp-and-docker/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/creating-a-secure-file-transfer-system-with-sftp-and-docker/</guid>
+      <description>&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A server or virtual machine with Docker installed.&lt;/li&gt;
+&lt;li&gt;Basic understanding of networking and file permissions.&lt;/li&gt;
+&lt;li&gt;An SSH client for testing SFTP connections.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-install-docker-if-not-installed&#34;&gt;Step 1: Install Docker (If Not Installed)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Update the system packages&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install Docker&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install -y docker.io
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Enable and start Docker&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl enable docker &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo systemctl start docker
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-2-set-up-the-sftp-directory&#34;&gt;Step 2: Set Up the SFTP Directory&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create a directory structure for SFTP users&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Deploying a Proxmox VE Server for Virtualization in Your HomeLab</title>
       <link>https://utechjapan.net/post/deploying-a-proxmox-ve-server-for-virtualization-in-your-homelab/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
@@ -112,6 +205,38 @@
 &lt;hr&gt;
 &lt;h3 id=&#34;2-hardware-budget&#34;&gt;&lt;strong&gt;2. Hardware Budget&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Your budget will dictate your hardware choices:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HomeLab Networking: Configuring pfSense for Advanced Firewall Rules</title>
+      <link>https://utechjapan.net/post/homelab-networking-configuring-pfsense-for-advanced-firewall-rules/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/homelab-networking-configuring-pfsense-for-advanced-firewall-rules/</guid>
+      <description>&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A dedicated device or virtual machine to install pfSense.&lt;/li&gt;
+&lt;li&gt;A basic understanding of networking concepts.&lt;/li&gt;
+&lt;li&gt;Access to your home network’s router for setup.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-install-pfsense&#34;&gt;Step 1: Install pfSense&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Download pfSense ISO&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Visit the &lt;a href=&#34;https://www.pfsense.org/download/&#34;&gt;official pfSense website&lt;/a&gt; and download the ISO.&lt;/li&gt;
+&lt;li&gt;Choose the correct architecture for your hardware (e.g., AMD64).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create a Bootable USB Drive&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/path/to/pfsense.iso of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/dev/sdX bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;1M
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Replace &lt;code&gt;/path/to/pfsense.iso&lt;/code&gt; with the path to the ISO file.&lt;/li&gt;
+&lt;li&gt;Replace &lt;code&gt;/dev/sdX&lt;/code&gt; with the correct USB drive identifier.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install pfSense on Your Device&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
     <item>
       <title>HomeLab Networking: Configuring VLANs for Segmented Traffic</title>
@@ -534,40 +659,6 @@ A: Yes, GitLab offers a free tier with all essential features for self-hosting. 
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo swapoff -a
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To make it permanent, edit &lt;code&gt;/etc/fstab&lt;/code&gt; and comment out the swap entry.&lt;br&gt;
 5. Install &lt;code&gt;containerd&lt;/code&gt; as the container runtime:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Setting Up a WireGuard VPN to Access Your HomeLab Remotely</title>
-      <link>https://utechjapan.net/post/setting-up-a-wireguard-vpn-to-access-your-homelab-remotely/</link>
-      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://utechjapan.net/post/setting-up-a-wireguard-vpn-to-access-your-homelab-remotely/</guid>
-      <description>&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;A server or virtual machine to host the WireGuard VPN.&lt;/li&gt;
-&lt;li&gt;Basic knowledge of networking and port forwarding.&lt;/li&gt;
-&lt;li&gt;A static public IP or dynamic DNS for remote access.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;step-1-install-wireguard&#34;&gt;Step 1: Install WireGuard&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Update and install WireGuard&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install -y wireguard
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Verify the installation&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wg --version
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;step-2-generate-keys&#34;&gt;Step 2: Generate Keys&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Generate the server’s private and public keys&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wg genkey | tee server_private.key | wg pubkey &amp;gt; server_public.key
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Save the keys securely&lt;/strong&gt;:&lt;br&gt;
-The private key will be in &lt;code&gt;server_private.key&lt;/code&gt;, and the public key will be in &lt;code&gt;server_public.key&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
