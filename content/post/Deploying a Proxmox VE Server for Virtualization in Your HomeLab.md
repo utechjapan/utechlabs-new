@@ -22,7 +22,7 @@ Proxmox Virtual Environment (Proxmox VE) is a powerful, open-source platform for
 ## Step 1: Prepare the Installation Media
 
 1. Download the Proxmox VE ISO file from the official website.  
-![[downloadsproxmox.png]]
+![Proxmox Interface](website/downloadsproxmox.png)
 2. Use a tool like [Rufus](https://rufus.ie/) or [balenaEtcher](https://www.balena.io/etcher/) to create a bootable USB drive with the Proxmox ISO.
 
 ---
