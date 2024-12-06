@@ -80,6 +80,7 @@ apt update && apt full-upgrade -y
 1. Navigate to the **Datacenter** section in the web interface.  
 2. Configure storage for VMs and containers:  
 - Add local storage for ISO images and backups.  
+![ISOuploadLocation](/images/proxmoxiso.png)
 - Add networked storage (NFS, CIFS) if needed.
 
 ---
