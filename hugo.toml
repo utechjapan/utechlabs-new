@@ -1,6 +1,6 @@
 baseURL = "https://utechjapan.net/"
 languageCode = "en-us"
-title = "UTechLabs"
+title = "UTechLab"
 theme = "PaperMod"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
@@ -38,7 +38,7 @@ buildFuture = true
  
   [params.profileMode]
     enabled = true
-    title = "UTechLabs"
+    title = "UTechLab"
     subtitle = "Innovating Technology"
     imageUrl = "images/profile.jpg" # Path to your profile image
     imageTitle = "Chikara Inohara"
@@ -70,7 +70,7 @@ buildFuture = true
     giscus = true
 
   [params.comments.giscusConfig]
-    repo = "utechjapan/utechlabs"          # Replace with your GitHub repo
+    repo = "utechjapan/utechlabs-new"          # Replace with your GitHub repo
     repoID = "YOUR_REPO_ID"                # Replace with your repo ID
     category = "General"                   # Replace with your category
     categoryID = "YOUR_CATEGORY_ID"        # Replace with your category ID
