@@ -170,6 +170,23 @@ sudo apt install -y keepalived Verify the installation:
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building a Lightweight Kubernetes Cluster with K3s
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What You’ll Need At least two nodes (one master, one worker) with Linux installed (e.g., Ubuntu 20.04 or newer). 2 GB RAM and 2 CPUs per node (minimum recommended). Basic networking knowledge. Step 1: Prepare the Nodes Update each node:
+sudo apt update &amp;&amp; sudo apt upgrade -y Install required dependencies:
+sudo apt install -y curl apt-transport-https Set unique hostnames for each node:
+On the master node:
+sudo hostnamectl set-hostname master-node On the worker node(s):
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Building a Lightweight Kubernetes Cluster with K3s" href="https://utechjapan.net/post/building-a-lightweight-kubernetes-cluster-with-k3s/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Creating a Secure File Transfer System with SFTP and Docker
     </h2>
   </header>
@@ -241,20 +258,6 @@ What You’ll Need A managed switch that supports VLANs (e.g., TP-Link, Netgear,
   </div>
   <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to HomeLab Networking: Configuring VLANs for Segmented Traffic" href="https://utechjapan.net/post/homelab-networking-configuring-vlans-for-segmented-traffic/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to Build a Home DNS Server with Pi-hole for Network-Wide Ad Blocking
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Are you tired of intrusive ads, tracking scripts, and sluggish internet performance caused by unnecessary network traffic? A Pi-hole DNS server can solve these problems by acting as a network-wide ad blocker and improving overall browsing speed. This blog post will walk you through the process of setting up Pi-hole at home, step by step.
-What You’ll Need A Raspberry Pi (recommended: Raspberry Pi 3 or newer) or any machine that can run Docker. MicroSD card (if using a Raspberry Pi). Home router with access to DNS settings. Basic understanding of Linux commands. Step 1: Install the Operating System If using a Raspberry Pi:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-04 00:00:00 +0000 UTC'>2024-12-04</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to How to Build a Home DNS Server with Pi-hole for Network-Wide Ad Blocking" href="https://utechjapan.net/post/how-to-build-a-home-dns-server-with-pi-hole-for-network-wide-ad-blocking/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

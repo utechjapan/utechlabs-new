@@ -128,6 +128,38 @@ The private key will be in &lt;code&gt;server_private.key&lt;/code&gt;, and the 
 &lt;p&gt;&lt;strong&gt;Verify the installation&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Building a Lightweight Kubernetes Cluster with K3s</title>
+      <link>https://utechjapan.net/post/building-a-lightweight-kubernetes-cluster-with-k3s/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/building-a-lightweight-kubernetes-cluster-with-k3s/</guid>
+      <description>&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;At least two nodes (one master, one worker) with Linux installed (e.g., Ubuntu 20.04 or newer).&lt;/li&gt;
+&lt;li&gt;2 GB RAM and 2 CPUs per node (minimum recommended).&lt;/li&gt;
+&lt;li&gt;Basic networking knowledge.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-prepare-the-nodes&#34;&gt;Step 1: Prepare the Nodes&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Update each node&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install required dependencies&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install -y curl apt-transport-https
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set unique hostnames for each node&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;On the master node:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo hostnamectl set-hostname master-node
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On the worker node(s):&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Creating a Secure File Transfer System with SFTP and Docker</title>
       <link>https://utechjapan.net/post/creating-a-secure-file-transfer-system-with-sftp-and-docker/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>

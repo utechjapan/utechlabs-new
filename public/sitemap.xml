@@ -71,6 +71,9 @@
     <loc>https://utechjapan.net/post/building-a-high-availability-setup-for-your-homelab-using-keepalived/</loc>
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://utechjapan.net/post/building-a-lightweight-kubernetes-cluster-with-k3s/</loc>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://utechjapan.net/tags/containers/</loc>
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
@@ -131,6 +134,9 @@
     <loc>https://utechjapan.net/tags/jellyfin/</loc>
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://utechjapan.net/tags/k3s/</loc>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://utechjapan.net/tags/k8s/</loc>
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
@@ -138,6 +144,9 @@
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://utechjapan.net/tags/kubernetes/</loc>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://utechjapan.net/tags/lightweight-cluster/</loc>
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://utechjapan.net/tags/media-server/</loc>

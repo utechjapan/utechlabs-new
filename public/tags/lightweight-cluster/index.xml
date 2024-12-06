@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Kubernetes on UTechLab</title>
-    <link>https://utechjapan.net/tags/kubernetes/</link>
-    <description>Recent content in Kubernetes on UTechLab</description>
+    <title>Lightweight Cluster on UTechLab</title>
+    <link>https://utechjapan.net/tags/lightweight-cluster/</link>
+    <description>Recent content in Lightweight Cluster on UTechLab</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://utechjapan.net/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://utechjapan.net/tags/lightweight-cluster/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a Lightweight Kubernetes Cluster with K3s</title>
       <link>https://utechjapan.net/post/building-a-lightweight-kubernetes-cluster-with-k3s/</link>
@@ -39,40 +39,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;On the worker node(s):&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Setting Up a Kubernetes (K8s) Cluster at Home for Beginners</title>
-      <link>https://utechjapan.net/post/setting-up-a-kubernetes-k8s-cluster-at-home-for-beginners/</link>
-      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://utechjapan.net/post/setting-up-a-kubernetes-k8s-cluster-at-home-for-beginners/</guid>
-      <description>&lt;p&gt;Kubernetes (K8s) is a powerful container orchestration platform used to manage applications at scale. Building a Kubernetes cluster in your homelab allows you to experiment with cloud-native concepts, deploy containerized applications, and learn skills for production-grade environments. In this guide, we’ll walk through setting up a basic Kubernetes cluster at home.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;At least two devices (can be physical machines, VMs, or Raspberry Pis):
-&lt;ul&gt;
-&lt;li&gt;One as a control plane (master node).&lt;/li&gt;
-&lt;li&gt;One or more as worker nodes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Linux installed on each device (Ubuntu 20.04 or newer is recommended).&lt;/li&gt;
-&lt;li&gt;A reliable network connection.&lt;/li&gt;
-&lt;li&gt;Basic understanding of Linux commands.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;step-1-prepare-the-nodes&#34;&gt;Step 1: Prepare the Nodes&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Install Ubuntu&lt;/strong&gt; on all devices (or use your preferred Linux distro).&lt;/li&gt;
-&lt;li&gt;Update and upgrade the system on each node:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Set static IP addresses for all nodes to ensure stability in the cluster. Configure this via &lt;code&gt;/etc/netplan&lt;/code&gt; or your router&amp;rsquo;s DHCP settings.&lt;/li&gt;
-&lt;li&gt;Disable swap on all nodes to meet Kubernetes requirements:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo swapoff -a
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To make it permanent, edit &lt;code&gt;/etc/fstab&lt;/code&gt; and comment out the swap entry.&lt;br&gt;
-5. Install &lt;code&gt;containerd&lt;/code&gt; as the container runtime:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
