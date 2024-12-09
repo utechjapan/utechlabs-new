@@ -122,6 +122,9 @@
     <loc>https://utechjapan.net/post/homelab-networking-configuring-vlans-for-segmented-traffic/</loc>
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://utechjapan.net/post/hosting-your-own-media-streaming-service-with-jellyfin-and-traefik/</loc>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://utechjapan.net/post/how-to-build-a-home-dns-server-with-pi-hole-for-network-wide-ad-blocking/</loc>
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
@@ -150,6 +153,9 @@
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://utechjapan.net/tags/media-server/</loc>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://utechjapan.net/tags/media-streaming/</loc>
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://utechjapan.net/tags/monitoring/</loc>
@@ -219,6 +225,9 @@
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://utechjapan.net/tags/sftp/</loc>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://utechjapan.net/tags/traefik/</loc>
     <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://utechjapan.net/tags/unbound/</loc>
