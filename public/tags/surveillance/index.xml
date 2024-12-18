@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Surveillance on UTechLab</title>
+    <link>https://utechjapan.net/tags/surveillance/</link>
+    <description>Recent content in Surveillance on UTechLab</description>
+    <generator>Hugo -- 0.139.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://utechjapan.net/tags/surveillance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running a Home Surveillance System with ZoneMinder or Shinobi</title>
+      <link>https://utechjapan.net/post/running-a-home-surveillance-system-with-zoneminder-or-shinobi/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/running-a-home-surveillance-system-with-zoneminder-or-shinobi/</guid>
+      <description>&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A server or virtual machine with sufficient resources (recommended: 8 GB RAM, 4 CPUs, and 1 TB of storage).&lt;/li&gt;
+&lt;li&gt;IP cameras or USB webcams.&lt;/li&gt;
+&lt;li&gt;A Linux distribution (e.g., Ubuntu 20.04 or newer).&lt;/li&gt;
+&lt;li&gt;Basic knowledge of networking and Linux commands.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-decide-between-zoneminder-and-shinobi&#34;&gt;Step 1: Decide Between ZoneMinder and Shinobi&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;ZoneMinder&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A mature, feature-rich open-source surveillance system.&lt;/li&gt;
+&lt;li&gt;Offers advanced features like PTZ (Pan-Tilt-Zoom), motion detection, and event-based recording.&lt;/li&gt;
+&lt;li&gt;Suitable for users comfortable with a detailed configuration process.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Shinobi&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -435,6 +435,28 @@ php php-mysql php-xml php-mbstring php-curl php-zip php-gd unzip
 &lt;p&gt;&lt;strong&gt;Run Prometheus using Docker&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Running a Home Surveillance System with ZoneMinder or Shinobi</title>
+      <link>https://utechjapan.net/post/running-a-home-surveillance-system-with-zoneminder-or-shinobi/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://utechjapan.net/post/running-a-home-surveillance-system-with-zoneminder-or-shinobi/</guid>
+      <description>&lt;h2 id=&#34;what-youll-need&#34;&gt;What You’ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A server or virtual machine with sufficient resources (recommended: 8 GB RAM, 4 CPUs, and 1 TB of storage).&lt;/li&gt;
+&lt;li&gt;IP cameras or USB webcams.&lt;/li&gt;
+&lt;li&gt;A Linux distribution (e.g., Ubuntu 20.04 or newer).&lt;/li&gt;
+&lt;li&gt;Basic knowledge of networking and Linux commands.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-decide-between-zoneminder-and-shinobi&#34;&gt;Step 1: Decide Between ZoneMinder and Shinobi&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;ZoneMinder&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A mature, feature-rich open-source surveillance system.&lt;/li&gt;
+&lt;li&gt;Offers advanced features like PTZ (Pan-Tilt-Zoom), motion detection, and event-based recording.&lt;/li&gt;
+&lt;li&gt;Suitable for users comfortable with a detailed configuration process.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Shinobi&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Running a Pi-hole and Unbound Setup for Enhanced DNS Privacy</title>
       <link>https://utechjapan.net/post/running-a-pi-hole-and-unbound-setup-for-enhanced-dns-privacy/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
