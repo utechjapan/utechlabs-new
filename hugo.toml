@@ -1,7 +1,7 @@
 baseURL = "https://utechjapan.net/"
 languageCode = "en-us"
 title = "UTechLab"
-theme = "PaperMod"
+theme = "toha"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 buildDrafts = true
@@ -15,68 +15,13 @@ buildFuture = true
       attribute = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"] 
+  home = ["HTML", "RSS", "JSON"]
 
 [params]
-  defaultTheme = "dark" # Set default theme to dark
-  disableThemeToggle = false
-  showReadingTime = true
-  showShareButtons = true
-  showPostNavLinks = true
-  showBreadCrumbs = true
-  showCodeCopyButtons = true
-  subtitle = "Innovating Technology"
+  tagline = "Innovating Technology"  # Toha uses 'tagline' instead of 'subtitle'
   description = "UTechLabs - Exploring Technology and Innovations"
-  dateFormat = "2006-01-02"
   logo = "images/logo.png"
   favicon = "images/favicon.ico"
-  disableSearch = false # Enable search functionality
-  showTags = true
-  showRelatedPosts = true
-  enableFontAwesome = true
-  showToc = true
- 
-  [params.profileMode]
-    enabled = true
-    title = "UTechLab"
-    subtitle = "Innovating Technology"
-    imageUrl = "images/profile.jpg" # Path to your profile image
-    imageTitle = "Chikara Inohara"
-    imageWidth = 120
-    imageHeight = 120
-    buttons = [
-      { name = "Blog", url = "/post/" },
-      { name = "GitHub", url = "https://github.com/utechjapan" },
-      { name = "About", url = "/about/" },
-    ]
-
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/utechjapan"
-
-  [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://www.linkedin.com/in/chikara-inohara-a26bb9143/"
-
-  [[params.socialIcons]]
-    name = "twitter"
-    url = "https://twitter.com/_utechlab"
-
-  [[params.socialIcons]]
-    name = "youtube"
-    url = "https://www.youtube.com/channel/UCWlf8tLDjoS07y3yHKqRVww"
-
-  [params.comments]
-    giscus = true
-
-  [params.comments.giscusConfig]
-    repo = "utechjapan/utechlabs-new"          # Replace with your GitHub repo
-    repoID = "YOUR_REPO_ID"                # Replace with your repo ID
-    category = "General"                   # Replace with your category
-    categoryID = "YOUR_CATEGORY_ID"        # Replace with your category ID
-    mapping = "pathname"
-    reactionsEnabled = "1"
-    theme = "dark"
 
 [menu]
   [[menu.main]]
@@ -84,19 +29,16 @@ buildFuture = true
     name = "Home"
     url = "/"
     weight = 1
-
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "/post/"
     weight = 2
-
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
     weight = 3
-
   [[menu.main]]
     identifier = "search"
     name = "Search"
@@ -105,3 +47,7 @@ buildFuture = true
 
 [assets]
   disableFingerprinting = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-toha/toha/v4"
