@@ -1,7 +1,7 @@
 baseURL = "https://utechjapan.net/"
 languageCode = "en-us"
 title = "UTechLab"
-theme = "toha"
+# Do NOT include a 'theme' parameter here when using modules!
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 buildDrafts = true
