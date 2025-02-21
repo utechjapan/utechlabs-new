@@ -21,7 +21,13 @@ buildFuture = true
   tagline = "Innovating Technology"  # Toha uses 'tagline' instead of 'subtitle'
   description = "UTechLabs - Exploring Technology and Innovations"
   logo = "images/logo.png"
-  favicon = "images/favicon.ico"
+
+
+[params.favicon]
+  icon = "images/favicon.ico"
+  shortcut = "images/favicon.ico"
+  apple_touch_icon = "images/apple-touch-icon.png"
+  safari_tab_icon = "images/safari-pinned-tab.svg"
 
 [menu]
   [[menu.main]]
