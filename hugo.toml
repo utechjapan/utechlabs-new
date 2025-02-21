@@ -23,10 +23,10 @@ buildFuture = true
   logo = "images/logo.png"
 
 [params.favicon]
-  icon = "images/favicon.ico"
-  shortcut = "images/favicon.ico"
-  appleTouchIcon = "images/apple-touch-icon.png"
-  safariTabIcon = "images/safari-pinned-tab.svg"
+  icon = "/images/favicon.ico"
+  shortcut = "/images/favicon.ico"
+  appleTouchIcon = "/images/apple-touch-icon.png"
+  safariTabIcon = "/images/safari-pinned-tab.svg"
 
 
 [menu]
