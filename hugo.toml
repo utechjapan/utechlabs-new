@@ -22,13 +22,6 @@ buildFuture = true
   description = "UTechLabs - Exploring Technology and Innovations"
   logo = "images/logo.png"
 
-[params.favicon]
-  icon = "/images/favicon.ico"
-  shortcut = "/images/favicon.ico"
-  appleTouchIcon = "/images/apple-touch-icon.png"
-  safariTabIcon = "/images/safari-pinned-tab.svg"
-
-
 [menu]
   [[menu.main]]
     identifier = "home"
